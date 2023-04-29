@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -8,3 +9,6 @@ public class movieticket{
 =======
 import java.util.;
 >>>>>>> 8679d78 (Done)
+=======
+
+>>>>>>> 894417e (added new classes)

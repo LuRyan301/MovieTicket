@@ -18,7 +18,9 @@ public class theatre {
 
         Scanner input = new Scanner(System.in);
 
-        // choose type
+        // choose type 
+        
+        ///no premium or normal in theatre type
         System.out.println("Choose Theatre\n1.Premium\n2.Normal");          
         int type = input.nextInt();
         String theatreType = "";
@@ -48,6 +50,7 @@ public class theatre {
         }
     }
 
+    //premium / normal seat yway
     public void chooseSeat(){
         boolean choose = false;
 
@@ -90,5 +93,11 @@ public class theatre {
             }
         }
         System.out.println(price*seatTotal + " bhat");
+    }
+
+    public static void main(String[] args) {
+        theatre theatre1 = new theatre();
+        theatre1.chooseTheatre();
+        theatre1.chooseSeat();
     }
 }
