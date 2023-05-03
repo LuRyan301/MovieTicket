@@ -12,7 +12,7 @@ public class movieticket extends Snack{
     File ticketfile = new File("data.txt") ;
 
     public void printticket(){
-        String string = "\t===Movie Ticket===\n1";
+        String string = "\t===Movie Ticket===\n";
         try (DataInputStream din = new DataInputStream(new FileInputStream(ticketfile))) {
             string += din.readUTF() + "\n";
             string += din.readUTF() + "\n";
