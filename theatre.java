@@ -83,6 +83,7 @@ public class  theatre{
         for(int i = 0; i < index; i++){
             string += seatNum[i] + " ";
         }
+        string += "\nSeat Price : " + totalPrice + " baht"; 
         return string;
     }
 
