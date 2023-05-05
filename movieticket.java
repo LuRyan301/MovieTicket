@@ -6,11 +6,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.*;
 
-public class movieticket extends Snack{
+public class movieticket extends Snack{ //inheritance
     
     double totalCost;
     File ticketfile = new File("data.txt") ;
 
+    //I0 input output
     public void printticket(){
         String string = "\t===Movie Ticket===\n";
         try (DataInputStream din = new DataInputStream(new FileInputStream(ticketfile))) {

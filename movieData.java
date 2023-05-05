@@ -2,10 +2,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
 
-//lee pl ryan
 public class movieData {
 
-
+    // collection
     private String[] names ;
     private int[] startimes;
     private int[] runtimes;

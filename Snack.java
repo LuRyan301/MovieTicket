@@ -27,7 +27,7 @@ public class Snack {
             System.out.print("\nChoose your snack : ");  ////write in number
             int purchasedSnack = input.nextInt();
 
-
+            // try / catch
             try{
                 if (purchasedSnack < 1 || purchasedSnack > 6) {
                     throw new InvalidChoiceException("Choose only 1 to 6!");
