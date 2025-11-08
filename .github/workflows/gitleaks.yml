@@ -9,6 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run Gitleaks
-        uses: gitleaks/gitleaks-action@v3
+        # NOTE: v3 tag couldn't be resolved in the environment. Use v2 which is a known published tag.
+        # If you prefer a specific release, replace `v2` with a specific semver (e.g. v2.4.0) or a commit SHA.
+        uses: gitleaks/gitleaks-action@v2
         with:
           args: detect --repo-path=. --verify=false
