@@ -1,0 +1,14 @@
+name: "Gitleaks Scan"
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v3
+        with:
+          args: detect --repo-path=. --verify=false
